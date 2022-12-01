@@ -19,11 +19,13 @@ public class StateCensusAnalyzer {
     private String maleLiterate;
     @CsvBindByName(column = "Female_Literate", required = true)
     private String femaleLiterate;
+    @CsvBindByName(column = "StateCode", required = true)
+    private String stateCode;
 
     @Override
     public String toString() {
         return "StateCensusAnalyzer{" +
-                "stateCode='" + serialNo + '\'' +
+                "serialNo='" + serialNo + '\'' +
                 ", stateName='" + stateName + '\'' +
                 ", population='" + population + '\'' +
                 ", maleCount='" + maleCount + '\'' +
@@ -31,6 +33,7 @@ public class StateCensusAnalyzer {
                 ", literateCount='" + literateCount + '\'' +
                 ", maleLiterate='" + maleLiterate + '\'' +
                 ", femaleLiterate='" + femaleLiterate + '\'' +
+                ", stateCode='" + stateCode + '\'' +
                 '}';
     }
 }
