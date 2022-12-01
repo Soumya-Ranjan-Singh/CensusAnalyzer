@@ -3,8 +3,8 @@ package com.censusanalyzer.main;
 import com.opencsv.bean.CsvBindByName;
 
 public class StateCensusAnalyzer {
-    @CsvBindByName(column = "StateCode", required = true)
-    private String stateCode;
+    @CsvBindByName(column = "SerialNo", required = true)
+    private String serialNo;
     @CsvBindByName(column = "StateName", required = true)
     private String stateName;
     @CsvBindByName(column = "Population", required = true)
@@ -23,7 +23,7 @@ public class StateCensusAnalyzer {
     @Override
     public String toString() {
         return "StateCensusAnalyzer{" +
-                "stateCode='" + stateCode + '\'' +
+                "stateCode='" + serialNo + '\'' +
                 ", stateName='" + stateName + '\'' +
                 ", population='" + population + '\'' +
                 ", maleCount='" + maleCount + '\'' +
